@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.juego.CalculatorController">
+   <children>
+      <Label text="Bienvenido a SmartCalculating " />
+      <Button fx:id="primaryButton" text="Jugar!" onAction="#aleatorio"/>
+      <Label text="Suma:" />
+      <Label fx:id="tfCantidad1"  />
+      <Label text="+" />
+      <Label fx:id="tfCantidad2"  />
+      <Label text="=" />
+      <TextField fx:id="resultadoUsuario" layoutX="14.0" layoutY="151.0" prefHeight="25.0" prefWidth="192.0" promptText="Tú resultado" />
+      <Button fx:id="secondButton" text="=" onAction="#BotoonTwo"/>
+      <Label fx:id="Resultado" />
+      <!--Resta-->
+      <Label text="Resta:" />
+      <Label fx:id="tfresta1"  />
+      <Label text="-" />
+      <Label fx:id="tfresta2"  />
+      <Label text="=" />
+      <TextField fx:id="resultadoRestaUsuario" layoutX="14.0" layoutY="151.0" prefHeight="25.0" prefWidth="192.0" promptText="Tú resultado" />
+      <Button fx:id="thidButton" text="=" onAction="#BotoonRest"/>
+      <Label fx:id="ResultadoR" />
+      <!--Multiplicación-->
+      <Label text="Multi:" />
+      <Label fx:id="tfmulti1"  />
+      <Label text="x" />
+      <Label fx:id="tfmulti2"  />
+      <Label text="=" />
+      <TextField fx:id="resultadoMultiUsuario" layoutX="14.0" layoutY="151.0" prefHeight="25.0" prefWidth="192.0" promptText="Tú resultado" />
+      <Button fx:id="fourButton" text="=" onAction="#BotoonMultiplication"/>
+      <Label fx:id="ResultadoX" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
