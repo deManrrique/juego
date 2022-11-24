@@ -4,9 +4,12 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
-
+import javafx.scene.text.Font;
+import javafx.scene.image.ImageView;
+import javafx.scene.image.Image;
 public class CalculatorController {
 
+    
     @FXML
     private Label tfCantidad1;
     @FXML
@@ -36,9 +39,12 @@ public class CalculatorController {
     private TextField resultadoMultiUsuario;
     @FXML
     private Label ResultadoX;
+    
 
     @FXML
     private void aleatorio() {
+
+        //Dinosaurio.setFitWidth(0);
         // suma aleatorio
         int cantidad1 = (int) (Math.random() * 10 + 1);
         String numero1 = String.valueOf(cantidad1);
@@ -141,7 +147,9 @@ public class CalculatorController {
     private void printResult(Label control, Boolean result) {
         if (result) {
             control.setText("Correcto");
+            
             control.setTextFill(Color.GREEN);
+           
         }
         else {
             control.setText("Incorrecto");

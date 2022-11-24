@@ -4,11 +4,23 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.TextField?>
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.juego.CalculatorController">
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<VBox alignment="CENTER" spacing="5.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.juego.CalculatorController" >
    <children>
-      <Label text="Bienvenido a SmartCalculating " />
-      <Button fx:id="primaryButton" text="Jugar!" onAction="#aleatorio"/>
-      <Label text="Suma:" />
+
+      <Label text="Bienvenido a SmartCalculating " style="-fx-text-fill: #b625be;" />
+    
+  <!--imagen signo de interrogación-->
+      <ImageView pickOnBounds="true" preserveRatio="true" FitWidth="230.0" fitHeight="230.0" >
+         <image>
+            <Image url="@../img/dinosaurio1.png"/>
+         </image>
+      </ImageView>
+      <Button fx:id="primaryButton" text="Jugar!" onAction="#aleatorio" style="-fx-text-fill: #2571be;" />
+      <!--suma-->
+      <Label text="Suma:" style="-fx-text-fill: #b625be;" />
       <Label fx:id="tfCantidad1"  />
       <Label text="+" />
       <Label fx:id="tfCantidad2"  />
@@ -17,7 +29,7 @@
       <Button fx:id="secondButton" text="=" onAction="#BotoonTwo"/>
       <Label fx:id="Resultado" />
       <!--Resta-->
-      <Label text="Resta:" />
+      <Label text="Resta:" style="-fx-text-fill: #b625be;"/>
       <Label fx:id="tfresta1"  />
       <Label text="-" />
       <Label fx:id="tfresta2"  />
@@ -26,7 +38,7 @@
       <Button fx:id="thidButton" text="=" onAction="#BotoonRest"/>
       <Label fx:id="ResultadoR" />
       <!--Multiplicación-->
-      <Label text="Multi:" />
+      <Label text="Multi:" style="-fx-text-fill: #b625be;" />
       <Label fx:id="tfmulti1"  />
       <Label text="x" />
       <Label fx:id="tfmulti2"  />
