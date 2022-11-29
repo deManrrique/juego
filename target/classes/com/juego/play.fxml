@@ -19,7 +19,7 @@
          </image>
       </ImageView>
       <Button fx:id="primaryButton" text="Jugar!" onAction="#aleatorio" style="-fx-text-fill: #2571be;" />
-      <!--suma-->
+      <!--suma!-->
       <Label text="Suma:" style="-fx-text-fill: #b625be;" />
       <Label fx:id="tfCantidad1"  />
       <Label text="+" />
